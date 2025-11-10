@@ -308,7 +308,7 @@
     </div>
     
     <footer class="copyright">
-      &copy; octaviani 2025
+      &copy; lila 2025
     </footer>
     <script>
       function generateApiKey() {
@@ -333,11 +333,10 @@
           .then(() => {
             const originalText = buttonElement.textContent;
             buttonElement.textContent = "Disalin!";
-            buttonElement.style.backgroundColor = "#28a745"; // Warna hijau untuk sukses
+            buttonElement.style.backgroundColor = "#28a745"; 
 
             setTimeout(() => {
               buttonElement.textContent = originalText;
-              // Kembali ke warna semula
               buttonElement.style.backgroundColor = "var(--copy-btn-bg)"; 
             }, 2000);
           })
