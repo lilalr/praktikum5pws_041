@@ -25,4 +25,13 @@ app.post("/check", (req, res) => {
     });
   } else {
 
-    
+    res.status(400).json({
+      status: "error",
+      message: "API key tidak ada atau tidak valid",
+    });
+  }
+});
+
+app.listen(port, () => {
+  console.log(`Server berjalan di http://localhost:${port}`);
+});
